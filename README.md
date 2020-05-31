@@ -6,7 +6,8 @@ RiP (Replace in Place) is a Quick Action for MacOS, and provides a very basic "S
 
 1. Download *RiP.workflow.zip*, and unzip it
 2. Double click and install RiP.workflow
-3. (Optional) Add it to your touchbar's quick actions, to be able to use it quickly
+3. (Optional) Add it to your touch bar's quick actions: *System Preferences -> Extensions -> Touch Bar*
+4. (Optional) Assign a keyboard shortcut to the service: *System Preferences -> Keyboard -> Shortcuts -> Services -> RiP*
 
 ## How to use?
 
@@ -18,7 +19,8 @@ Select the text you want to search in, and start the action by choosing it in yo
 This is a quite basic Automator workflow, which is basically just a wrapper around the standard `sed` command:
 
 ```bash
-echo $1 | sed -E 's/'"$2"'/'"$3"'/g'
+OUTPUT=$(sed -E 's/'"$2"'/'"$3"'/g' <<< "$1")
+echo "$OUTPUT"
 ```
 
 **Where**:
