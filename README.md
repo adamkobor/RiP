@@ -5,7 +5,7 @@ RiP (Replace in Place) is a Quick Action for MacOS, and provides a very basic "S
 ## How to install?
 
 1. Download [RiP.workflow.zip](https://github.com/adamkobor/RiP/raw/master/RiP.workflow.zip), and unzip it
-2. Double click and install RiP.workflow
+2. Double click and install *RiP.workflow*
 3. (Optional) Add it to your touch bar's quick actions: *System Preferences -> Extensions -> Touch Bar* (You have to add the "Quick Actions" tile to your touch bar as well!)
 4. (Optional) Assign a keyboard shortcut to the service: *System Preferences -> Keyboard -> Shortcuts -> Services -> RiP*
 
@@ -25,8 +25,8 @@ echo "$OUTPUT"
 
 **Where**:
 - `$1` is the selected text
-- `$2` is the text or **regular expression** you want to search for
-- `$3` is the text or **regular expression** you want to replace by
+- `$2` is the *text or regular expression* you want to search for (the value from *"Find"* modal)
+- `$3` is the *text or regular expression* you want to replace by (the value from *"Replace with"* modal)
 
 You can use **matcher groups** as well (see examples below).
 
