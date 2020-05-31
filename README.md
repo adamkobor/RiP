@@ -13,7 +13,7 @@ RiP (Replace in Place) is a Quick Action for MacOS, and provides a very basic "S
 Select the text you want to search in, and start the action by choosing it in your Mac's touchbar, or from the context menu (*Services* -> *RiP*)
 
 ![Usage]
-(https://github.com/adamkobor/RiP/blob/master/rip.gif)
+(https://github.com/adamkobor/RiP/blob/master/rip.gif?raw=true)
 
 ## How does it work?
 This is a quite basic Automator workflow, which is basically just a wrapper around the standard `sed` command:
